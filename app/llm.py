@@ -4,7 +4,7 @@ from app import load_env
 #from .config import GROQ_API_KEY, GOOGLE_API_KEY
 api_keys_dict = load_env.get_all_env_vars()
 groq_client = Groq(api_key=api_keys_dict["GROQ_API_KEY"])
-
+GOOGLE_API_KEY = api_keys_dict["GOOGLE_API_KEY"]
 def call_groq(prompt: str):
     resp = groq_client.chat.completions.create(
         model="llama3-8b-8192",
