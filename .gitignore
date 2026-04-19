@@ -18,4 +18,4 @@ __pycache__/
 .idea/
 
 # uv lock (optional: keep or ignore depending on your workflow)
-uv.lock.env 
+uv.lock.env
