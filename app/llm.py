@@ -1,10 +1,11 @@
 from groq import Groq
-import google.generativeai as genai
+#import google.generativeai as genai
+from google import genai
 from app import load_env
 #from .config import GROQ_API_KEY, GOOGLE_API_KEY
-api_keys_dict = load_env.get_all_env_vars()
+api_keys_dict = load_env.load_env_vars('.env')
 groq_client = Groq(api_key=api_keys_dict["GROQ_API_KEY"])
-
+GOOGLE_API_KEY = api_keys_dict["GOOGLE_API_KEY"]
 def call_groq(prompt: str):
     resp = groq_client.chat.completions.create(
         model="llama3-8b-8192",

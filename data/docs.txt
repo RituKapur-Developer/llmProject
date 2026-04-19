@@ -1,0 +1,4 @@
+Monte Carlo methods use random sampling.
+RAG combines retrieval with generation.
+LangGraph enables multi-agent workflows.
+Groq provides fast LLM inference.
