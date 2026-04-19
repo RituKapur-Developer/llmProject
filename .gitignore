@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+.venv/
+
+# Env files (DO NOT COMMIT KEYS)
+.env
+
+# OS / misc
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# uv lock (optional: keep or ignore depending on your workflow)
+uv.lock.env 
